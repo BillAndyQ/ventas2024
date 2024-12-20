@@ -19,12 +19,7 @@ public class Ventas_2024Application {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // Permite todas las rutas
-                        .allowedOriginPatterns(
-		            "http://localhost:3000", // Desarrollo local
-		            "https://*.vercel.app", // Todos los subdominios de vercel.app
-		            "https://system-app-ventas-production.up.railway.app", // Dominio de producción específico
-		            "https://*.railway.app" // Todos los subdominios de railway.app
-		        )
+                        .allowedOrigins("https://system-app-ventas-production.up.railway.app")
 			.allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos permitidos
                         .allowedHeaders("*") // Encabezados permitidos
                         .allowCredentials(true); // Si se requiere que se envíen credenciales (como cookies o tokens)
