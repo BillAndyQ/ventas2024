@@ -21,7 +21,7 @@ public class Ventas_2024Application {
                 registry.addMapping("/**") // Permite todas las rutas
                         .allowedOrigins("http://localhost:3000","http://127.0.0.1:3000","https://system-app-ventas.vercel.app","system-app-ventas.vercel.app","https://system-app-ventas.vercel.app/") // Permite todos los orígenes
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Métodos permitidos
-                        .allowedHeaders("Content-Type", "Authorization", "Accept") // Encabezados permitidos
+                        .allowedHeaders("*") // Encabezados permitidos
                         .allowCredentials(true); // Si se requiere que se envíen credenciales (como cookies o tokens)
             }
         };
