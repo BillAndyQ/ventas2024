@@ -21,7 +21,7 @@ public class Producto {
     // Mapeo directo del campo de clave foránea
     @Column(name = "idEmpresa", nullable = false)
     private int idEmpresa;
-    
+   
     @ManyToOne
     @JoinColumn(name = "idCategoria", nullable = false)
     private Categoria categoria;
