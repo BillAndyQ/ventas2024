@@ -21,7 +21,7 @@ public class ProductoController {
     public List<Producto> searchProductos(@PathVariable String name) {
         return productoServ.searchProducto(name);  // Pasamos 'name' en lugar de 'producto'
     }
-
+    
     @GetMapping("/{id}")
     public Producto findProducto(@PathVariable Long id) {
         return productoServ.findProducto(id);
