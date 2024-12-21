@@ -18,7 +18,7 @@ public class ProductoController {
         return productoServ.getProductos();
     }
     
-     @GetMapping("/search/{name}")
+    @GetMapping("/search/{name}")
     public List<Producto> searchProductos(@PathVariable String name) {
         return productoServ.searchProducto(name);  // Pasamos 'name' en lugar de 'producto'
     }
